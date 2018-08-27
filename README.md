@@ -16,6 +16,11 @@ list and detail: customer, item, contact
 observable<Item>              (item | async)?
 
 observable<Item>.subscribe()    item?
+<!--
+<div *ngIf="userObservable | async; let userObservable; else loading">
+ {{userObservable.lastName}}
+ </div>
+-->
 
 ## delay
 return of(ITEMS).pipe(delay(FETCH_LATENCY));
