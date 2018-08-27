@@ -9,6 +9,9 @@ service: UserService is an app-wide singleton
 pipe
 directive: highlight
 
+## modules:
+list and detail: customer, item, contact
+
 ## observable
 observable<Item>              (item | async)?
 
